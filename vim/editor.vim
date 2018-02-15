@@ -1,8 +1,9 @@
 filetype plugin indent on " allows to overwrite this settings for specific filetypes
 set hidden " allows to open new buffer, when current one is unsaved
 set mouse=a " allows mouse in all modes
+set backspace=2 " backspace works in insert
 
-" editor 
+" editor
 set number " shows line numbers
 set cursorline " highlights current line
 set colorcolumn=120 " highlight column
@@ -29,7 +30,7 @@ set splitright " open vertical split on right side
 " ignorcase and smartcase together:
 " lowercase matches lowercase and uppercase
 " uppercase matches only uppercase
-set ignorecase 
+set ignorecase
 set smartcase
 set hlsearch " highlight all matches
 set incsearch " incremental searching when typing
