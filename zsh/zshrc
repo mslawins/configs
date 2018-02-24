@@ -6,10 +6,31 @@ ZSH_CUSTOM=~/Dropbox/configs/zsh
 ZSH_THEME="uncharted"
 
 # here goes plugins
-plugins=(git)
+plugins=(extract # easy archive extraction: extract foo.zip
+         colored-man-pages # pretty man pages
+         command-not-found # suggest package name when not found
+
+         # completition
+         git
+         docker
+         node
+         npm
+
+         # python related
+         celery
+         django
+         fabric
+         pip
+         python
+         virtualenv
+
+         # mac
+         brew
+         osx
+         )
 
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
-source ~/Dropbox/configs/zsh/aliases
+source ~/Dropbox/configs/zsh/aliases.cfg
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
