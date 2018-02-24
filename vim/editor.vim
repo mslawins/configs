@@ -2,6 +2,7 @@ filetype plugin indent on " allows to overwrite this settings for specific filet
 set hidden " allows to open new buffer, when current one is unsaved
 set mouse=a " allows mouse in all modes
 set backspace=2 " backspace works in insert
+set background=dark " prefer dark version
 
 " editor
 set number " shows line numbers

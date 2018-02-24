@@ -4,11 +4,11 @@ if &compatible
 endif
 
 " adds dein itself to runtime path
-set runtimepath+=~/Dropbox/configs/vim/plugins/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
 
 " dein magic
-if dein#load_state('~/Dropbox/configs/vim/plugins')
-  call dein#begin('~/Dropbox/configs/vim/plugins')
+if dein#load_state('~/.vim/dein')
+  call dein#begin('~/.vim/dein')
 
   " plugins
   call dein#add('~/Dropbox/configs/vim/plugins/repos/github.com/Shougo/dein.vim') " dein itself
