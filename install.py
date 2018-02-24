@@ -9,5 +9,9 @@ with open('.vimrc', 'w') as file:
 
 print('Setting tmux.conf')
 with open('.vimrc', 'w') as file:
-    file.write('source ~/Dropbox/configs/tmux/tmux.conf'
+    file.write('source ~/Dropbox/configs/tmux/tmux.conf')
+
+print('Setting zshrc')
+with open('.zshrc', 'w') as file:
+    file.write('source ~/Dropbox/configs/zsh/zshrc')
 

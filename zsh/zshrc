@@ -1,0 +1,15 @@
+# path to  oh-my-zsh installation.
+export ZSH=~/.oh-my-zsh
+
+# adds custom location with themes & set up theme
+ZSH_CUSTOM=~/Dropbox/configs/zsh
+ZSH_THEME="uncharted"
+
+# here goes plugins
+plugins=(git)
+
+source ~/.oh-my-zsh/oh-my-zsh.sh
+
+source ~/Dropbox/configs/zsh/aliases
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
