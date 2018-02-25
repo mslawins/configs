@@ -17,5 +17,5 @@ source ~/Dropbox/configs/vim/remaps.vim
 if has('mac')
     source ~/Dropbox/configs/vim/mac.vim
 elseif has('unix')
-    source ~/Dropbox/configs/vim/unix.vim
+    source ~/Dropbox/configs/vim/work.vim
 endif

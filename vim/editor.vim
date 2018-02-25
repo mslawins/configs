@@ -16,8 +16,8 @@ set t_Co=256 " allows 256 colors
 
 " indent
 set expandtab " tab now inserts spaces
-set tabstop=4 " amount of spaces that one tab takes, ftplugin can overwrite
-set shiftwidth=4  " indent size
+set tabstop=2 " amount of spaces that one tab takes, ftplugin can overwrite
+set shiftwidth=2  " indent size
 
 " swap & backup files
 set nobackup " does not create backup files

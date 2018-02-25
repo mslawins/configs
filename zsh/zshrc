@@ -31,6 +31,13 @@ plugins=(extract # easy archive extraction: extract foo.zip
 
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
+# aliases
 source ~/Dropbox/configs/zsh/aliases.cfg
+
+
+if [ "$(uname 2> /dev/null)" = "Linux" ]; then
+    source ~/Dropbox/configs/zsh/work_settings.cfg
+fi
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
