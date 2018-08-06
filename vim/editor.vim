@@ -3,6 +3,7 @@ set hidden " allows to open new buffer, when current one is unsaved
 set mouse=a " allows mouse in all modes
 set backspace=2 " backspace works in insert
 set background=dark " prefer dark version
+set guicursor= " block style cursor in insert mode in nvim
 
 " editor
 set number " shows line numbers
@@ -41,3 +42,7 @@ set completeopt-=preview " switches off preview screen
 
 " speed up vim
 set ttyfast " send more characters to redraw at a time
+
+" english spelling on git commit and in markdown
+autocmd FileType gitcommit setlocal spell
+autocmd BufRead,BufNewFile *.md setlocal spell

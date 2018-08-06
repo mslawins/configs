@@ -5,6 +5,7 @@ colorscheme gruvbox " colorscheme must be set after plugin settings
 " airline
 let g:airline#extensions#tabline#enabled = 1 " enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " show only file name in buffer bar
+let g:airline#extensions#ale#enabled = 1 " enavle vim-airline ale plugin
 
 " match tags always
 let g:mta_use_matchparen_group = 0 " switch off default and set up color below
@@ -32,10 +33,12 @@ let g:ycm_semantic_triggers['python'] = ['.']
 let g:ycm_semantic_triggers['css'] = [ 're!^\s{2}', 're!:\s+' ]
 let g:ycm_semantic_triggers['scss'] = [ 're!^\s{2}', 're!:\s+' ]
 
+" emmet
 " allow emmet only in html
 let g:user_emmet_install_global = 0
 autocmd FileType html EmmetInstall
 
+" set indentation to two spaces
 let g:user_emmet_settings = {
 \    'indentation' : '  '
 \}
@@ -50,6 +53,19 @@ command! -bang -nargs=* Ag
    \                         : fzf#vim#with_preview('right:50%'),
    \                 <bang>0)
 
+" vim polyglot
 " vue syntax is now faster
 let g:vue_disable_pre_processors=1
+
+" vue files has additional filetypes (i.e. allows for ycm in vue)
 autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
+
+" unisnippets
+let g:UltiSnipsExpandTrigger = '<C-s>s'
+
+" vim ale
+
+" next three lines are error msg format to include linter name
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s'

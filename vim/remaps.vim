@@ -25,6 +25,7 @@ nmap <leader>pr :call map(dein#check_clean(), "delete(v:val, 'rf')")<CR> :call d
 " \gb - git blame in split
 nmap <leader>gb :Gblame<CR>
 
+" \e - emmet expand
 nmap <silent><leader>e :call emmet#expandAbbr(3, "")<CR>
 
 " replaces pdb -> import pdb; pdb.set_trace()

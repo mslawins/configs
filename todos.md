@@ -3,7 +3,6 @@
 function which toggles markdown type
 color html tags more distinctively
 full css3 syntax (grid)
-async pylint/neomake
 ctags
 snippets
 code coloring in Ag preview
