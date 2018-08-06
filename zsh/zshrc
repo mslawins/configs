@@ -2,7 +2,7 @@
 export ZSH=~/.oh-my-zsh
 
 # adds custom location with themes & set up theme
-ZSH_CUSTOM=~/Dropbox/configs/zsh
+ZSH_CUSTOM=~/configs/zsh
 ZSH_THEME="uncharted"
 
 # here goes plugins
@@ -32,11 +32,11 @@ plugins=(extract # easy archive extraction: extract foo.zip
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
 # aliases
-source ~/Dropbox/configs/zsh/aliases.cfg
+source ~/configs/zsh/aliases.cfg
 
 
 if [ "$(uname 2> /dev/null)" = "Linux" ]; then
-    source ~/Dropbox/configs/zsh/work_settings.cfg
+    source ~/configs/zsh/work_settings.cfg
 fi
 
 

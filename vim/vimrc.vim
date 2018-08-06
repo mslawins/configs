@@ -30,20 +30,20 @@ Plug 'benmills/vimux' " used by aginoodle fast test runner
 call plug#end()
 
 " add ftplugins to runtimepath
-set runtimepath+=~/neovim/ftplugin
+set runtimepath+=~/configs/vim/ftplugin
 
 " editor options
-source ~/neovim/editor.vim
+source ~/configs/vim/editor.vim
 
 " plugins options
-source ~/neovim/plugins.vim
+source ~/configs/vim/plugins.vim
 
 " remaps
-source ~/neovim/remaps.vim
+source ~/configs/vim/remaps.vim
 
 " system specific
 if has('mac')
-    source ~/neovim/mac.vim
+    source ~/configs/vim/mac.vim
 elseif has('unix')
-    source ~/neovim/work.vim
+    source ~/configs/vim/work.vim
 endif

@@ -2,14 +2,12 @@
 
 This repository contains configs I personally use.
 
-### Instalation
+### Installation
 
-1. Install vim.plug
-2. Source vimrc.vim in nvim init
-3. Run nvim and install plugins via :PlugInstall
-6. On MacOS use iTerm2 preferences to set up color scheme
-7. Happiness
-
+1. Run Neo Vim to install plugin manager
+2. Run :PlugInstall to download & compile plugins
+3. Set up symlink for configs/gitconfig -> ~/.gitconfig
+4. On MacOS set up iTerm color scheme in preferences
 
 ### Example
 
