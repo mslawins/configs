@@ -12,3 +12,6 @@
 [mergetool "diffmerge"]
 	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
 	trustExitCode = true
+[alias]
+  editModified = !$EDITOR $(git status --short | awk '$1 ~ /^M|A|U/ {print $2}' )
+  editAll = !$EDITOR $(git status --short | awk '$1 ~ /^M|A|U|\\?/ {print $2}' )
