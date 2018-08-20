@@ -46,3 +46,11 @@ set ttyfast " send more characters to redraw at a time
 " english spelling on git commit and in markdown
 autocmd FileType gitcommit setlocal spell
 autocmd BufRead,BufNewFile *.md setlocal spell
+
+" set timeout len to 0ms in insert mode and back to 1000 ms in normal
+" this fixes the problem of slow insert mode exit
+augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=0
+    au InsertLeave * set timeoutlen=1000
+augroup END

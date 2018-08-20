@@ -64,8 +64,10 @@ autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
 let g:UltiSnipsExpandTrigger = '<C-s>s'
 
 " vim ale
-
 " next three lines are error msg format to include linter name
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s'
+
+" does not run check when typing
+let g:ale_lint_on_text_changed = 'never'
