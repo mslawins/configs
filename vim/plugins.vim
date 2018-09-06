@@ -57,9 +57,6 @@ command! -bang -nargs=* Ag
 " vue syntax is now faster
 let g:vue_disable_pre_processors=1
 
-" vue files has additional filetypes (i.e. allows for ycm in vue)
-autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
-
 " unisnippets
 let g:UltiSnipsExpandTrigger = '<C-s>s'
 
@@ -71,3 +68,5 @@ let g:ale_echo_msg_format = '[%linter%] %s'
 
 " does not run check when typing
 let g:ale_lint_on_text_changed = 'never'
+
+let b:ale_linters = ['pylint']
