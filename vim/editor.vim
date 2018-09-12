@@ -52,5 +52,5 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 augroup FastEscape
     autocmd!
     au InsertEnter * set timeoutlen=0
-    au InsertLeave * set timeoutlen=1000
+    au InsertLeave * set timeoutlen=500
 augroup END

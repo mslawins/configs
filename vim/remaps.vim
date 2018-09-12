@@ -15,7 +15,7 @@ nnoremap <silent><CR> :noh<CR>
 " \rv - reloads vimrc
 " \ev - open vimrc entry file
 nmap <leader>rv :so $MYVIMRC<CR>
-nmap <leader>ev :e ~/Dropbox/configs/vim/vimrc.vim<CR>
+nmap <leader>ev :e ~/configs/vim/vimrc.vim<CR>
 
 " \pi - plugin install
 " \pr - plugin remove
@@ -40,6 +40,7 @@ nmap <C-P> :Files<CR>
 " ctrl o runs :Ag
 nnoremap <C-O> :Ag<CR>
 
+" TODO
 " ctrl I runs :Ag with word under cursor
 "nmap <C-I> :Ag <C-R><C-W><CR>
 
@@ -49,8 +50,11 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" \cc - camel case to underscore
-nnoremap <leader>cc :s#\(\<\u\l\+\\|\l\+\)\(\u\)#\l\1_\l\2#g<CR>
+" \us - camel case to underscore
+nnoremap <leader>us :s#\(\<\u\l\+\\|\l\+\)\(\u\)#\l\1_\l\2#g<CR>
+
+" \kc camel case to kebab case
+nnoremap <leader>kc :s#\([a-z]\)\([A-Z]\)#\1-\L\2#g<CR>
 
 " nerd commenter
 " toggles comments --> #

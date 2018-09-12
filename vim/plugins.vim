@@ -22,6 +22,7 @@ autocmd FileType typescript JsPreTmpl html
 autocmd FileType css ColorHighlight
 autocmd FileType scss ColorHighlight
 autocmd FileType sass ColorHighlight
+autocmd FileType vue ColorHighlight
 
 " nerd commenter
 let g:NERDDefaultAlign = 'left' " align comment signs to left by default
@@ -30,6 +31,7 @@ let g:NERDDefaultAlign = 'left' " align comment signs to left by default
 let g:ycm_semantic_triggers = {}
 let g:ycm_semantic_triggers['typescript'] = ['.']
 let g:ycm_semantic_triggers['python'] = ['.']
+let g:ycm_semantic_triggers['ruby'] = ['.']
 let g:ycm_semantic_triggers['css'] = [ 're!^\s{2}', 're!:\s+' ]
 let g:ycm_semantic_triggers['scss'] = [ 're!^\s{2}', 're!:\s+' ]
 

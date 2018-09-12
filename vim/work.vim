@@ -55,4 +55,3 @@ map <leader>t :call RunTest(g:Commands, 1)<CR>
 map <leader>tt :call RunTest(g:Commands, 0)<CR>
 " end of fast test runner
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-
