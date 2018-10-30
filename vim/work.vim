@@ -4,7 +4,7 @@
 " leader t - one test with current cursor position
 " leader tt - one test with current cursor position, with clear database
 " leader T - all tests in file
-let g:Commands = {'one-lte-backlog': 'docker-compose exec backend pytest', 'aginoodle': '/home/mslawins/Aginoodle/aginoodle/bin/py.test', 'marta-pro': 'docker-compose exec backend pytest', 'marta-3': 'docker-compose exec backend pytest' }
+let g:Commands = {'one-lte-backlog': 'docker-compose exec backend pytest', 'aginoodle': 'docker-compose exec backend python ./tests.py --disable-pytest-warnings', 'marta-pro': 'docker-compose exec backend pytest', 'marta-3': 'docker-compose exec backend pytest' }
 
 function! RunTest(commands, reuse)
     let l:winview = winsaveview()
