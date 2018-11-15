@@ -60,7 +60,10 @@ command! -bang -nargs=* Ag
 let g:vue_disable_pre_processors=1
 
 " unisnippets
-let g:UltiSnipsExpandTrigger = '<C-s>s'
+let g:UltiSnipsExpandTrigger = '<C-j>'
+let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
+let g:UltiSnipsSnippetDirectories = ['~/configs/vim/snippets', 'UltiSnips']
 
 " vim ale
 " next three lines are error msg format to include linter name
