@@ -59,11 +59,11 @@ command! -bang -nargs=* Ag
 " vue syntax is now faster
 let g:vue_disable_pre_processors=1
 
-" unisnippets
-let g:UltiSnipsExpandTrigger = '<C-j>'
-let g:UltiSnipsJumpForwardTrigger = '<C-j>'
-let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
-let g:UltiSnipsSnippetDirectories = ['~/configs/vim/snippets', 'UltiSnips']
+" neosnippets
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+let g:neosnippet#snippets_directory=['~/configs/vim/snippets']
 
 " vim ale
 " next three lines are error msg format to include linter name

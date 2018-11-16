@@ -23,7 +23,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py'  } " code completition
 Plug 'w0rp/ale' " async linter
 Plug 'tpope/vim-fugitive' " git wrapper
 Plug 'jiangmiao/auto-pairs' " auto pair brackets etc.
-Plug 'SirVer/ultisnips' " snippet engine
+Plug 'Shougo/neosnippet.vim' " snippet engine
 
 Plug 'benmills/vimux' " used by aginoodle fast test runner
 

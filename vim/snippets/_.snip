@@ -1,0 +1,36 @@
+snippet mediaquery
+  @mixin respond-to($breakpoint) {
+    @if $breakpoint == BREAKPOINT_NAME {
+      @media only screen and (max-width: WIDTH_IN_EM) { @content };
+    }
+  }
+
+snippet abscenter
+  @mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+snippet resetcss
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+
+snippet ellipsis
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
