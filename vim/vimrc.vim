@@ -41,9 +41,5 @@ source ~/configs/vim/plugins.vim
 " remaps
 source ~/configs/vim/remaps.vim
 
-" system specific
-if has('mac')
-    source ~/configs/vim/mac.vim
-elseif has('unix')
-    source ~/configs/vim/work.vim
-endif
+source ~/configs/vim/mac.vim
+source ~/configs/vim/work.vim

@@ -34,10 +34,10 @@ source ~/.oh-my-zsh/oh-my-zsh.sh
 # aliases
 source ~/configs/zsh/aliases.cfg
 
+# node version manager script 
+export NVM_DIR=~/.nvm
+ [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-if [ "$(uname 2> /dev/null)" = "Linux" ]; then
-    source ~/configs/zsh/work_settings.cfg
-fi
-
+ source ~/configs/zsh/work_settings.cfg
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
