@@ -60,9 +60,15 @@ command! -bang -nargs=* Ag
 let g:vue_disable_pre_processors=1
 
 " neosnippets
+" ctrl + k expands
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" disable standard snippets
+let g:neosnippet#disable_runtime_snippets = { '_' : 1, }
+
+" snippets path
 let g:neosnippet#snippets_directory=['~/configs/vim/snippets']
 
 " vim ale
