@@ -72,7 +72,7 @@ vmap # <leader>c<Space>
 :command! XA xall
 
 " on file save strip trailing whitespaces
-autocmd FileType c,cpp,cfg,htmldjango,html,python,javascript,typescript,json,vim,markdown,vue autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType c,cpp,cfg,htmldjango,html,python,javascript,typescript,json,vim,markdown,vue,css,scss autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 " function which removes white spaces
 fun! <SID>StripTrailingWhitespaces()
