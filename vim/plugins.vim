@@ -76,5 +76,7 @@ let g:ale_echo_msg_format = '[%linter%] %s'
 
 " does not run check when typing
 let g:ale_lint_on_text_changed = 'never'
-
 let b:ale_linters = ['pylint']
+
+" prettier
+let g:prettier#exec_cmd_async = 1

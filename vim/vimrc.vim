@@ -23,6 +23,10 @@ Plug 'w0rp/ale' " async linter
 Plug 'tpope/vim-fugitive' " git wrapper
 Plug 'jiangmiao/auto-pairs' " auto pair brackets etc.
 Plug 'Shougo/neosnippet.vim' " snippet engine
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'for': ['typescript']
+  \}
 
 call plug#end()
 
