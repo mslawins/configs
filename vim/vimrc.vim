@@ -14,7 +14,6 @@ Plug 'junegunn/fzf.vim' " fzf binding to vim
 Plug 'Valloric/MatchTagAlways' " colors matching tags in html
 Plug 'JamshedVesuna/vim-markdown-preview' " runs web browser in paraller with copiled markdown
 Plug 'sheerun/vim-polyglot' " syntax for different languages
-Plug 'Quramy/vim-js-pretty-template' " syntax for es6 template literals in backticks
 Plug 'mattn/emmet-vim' " emmet in vim
 Plug 'hail2u/vim-css3-syntax' " better css3 syntax
 Plug 'scrooloose/nerdcommenter' " fast code comment
@@ -24,8 +23,6 @@ Plug 'w0rp/ale' " async linter
 Plug 'tpope/vim-fugitive' " git wrapper
 Plug 'jiangmiao/auto-pairs' " auto pair brackets etc.
 Plug 'Shougo/neosnippet.vim' " snippet engine
-
-Plug 'benmills/vimux' " used by aginoodle fast test runner
 
 call plug#end()
 

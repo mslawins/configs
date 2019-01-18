@@ -15,9 +15,6 @@ highlight MatchTag ctermfg=darkred ctermbg=lightgreen guifg=darkred guibg=lightg
 let vim_markdown_preview_toggle=3 " reloads preview on buffer save
 let vim_markdown_preview_github=0 " standard markdown by default
 
-" vim js pretty template auto run in typescript
-autocmd FileType typescript JsPreTmpl html
-
 " colorizer - run in css related file types
 autocmd FileType css ColorHighlight
 autocmd FileType scss ColorHighlight
