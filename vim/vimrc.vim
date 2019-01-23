@@ -19,14 +19,10 @@ Plug 'hail2u/vim-css3-syntax' " better css3 syntax
 Plug 'scrooloose/nerdcommenter' " fast code comment
 Plug 'chrisbra/Colorizer' " colors coloring in css
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py'  } " code completition
-Plug 'w0rp/ale' " async linter
+Plug 'w0rp/ale' " async linter, for fixing requies prettier installed globally
 Plug 'tpope/vim-fugitive' " git wrapper
 Plug 'jiangmiao/auto-pairs' " auto pair brackets etc.
 Plug 'Shougo/neosnippet.vim' " snippet engine
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'npm install',
-  \ 'for': ['typescript']
-  \}
 
 call plug#end()
 

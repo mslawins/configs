@@ -12,15 +12,13 @@ nnoremap <silent><tab> :bnext<CR>
 " hitting enter switches off search highlight
 nnoremap <silent><CR> :noh<CR>
 
-" \rv - reloads vimrc
+" \p - prettier
+nnoremap <leader>p :ALEFix<CR>
+
+"\rv - reloads vimrc
 " \ev - open vimrc entry file
 nmap <leader>rv :so $MYVIMRC<CR>
 nmap <leader>ev :e ~/configs/vim/vimrc.vim<CR>
-
-" \pi - plugin install
-" \pr - plugin remove
-nmap <leader>pi :call dein#install()<CR>
-nmap <leader>pr :call map(dein#check_clean(), "delete(v:val, 'rf')")<CR> :call dein#recache_runtimepath()<CR>
 
 " \gb - git blame in split
 nmap <leader>gb :Gblame<CR>

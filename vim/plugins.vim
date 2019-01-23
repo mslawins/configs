@@ -79,4 +79,10 @@ let g:ale_lint_on_text_changed = 'never'
 let b:ale_linters = ['pylint']
 
 " prettier
-let g:prettier#exec_cmd_async = 1
+let g:ale_fixers = {
+\   'typescript': ['prettier'],
+\   'scss': ['prettier'],
+\   'html': ['prettier'],
+\}
+
+let g:ale_javascript_prettier_options = '--single-quote'
