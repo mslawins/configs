@@ -83,6 +83,7 @@ let g:ale_fixers = {
 \   'typescript': ['prettier'],
 \   'scss': ['prettier'],
 \   'html': ['prettier'],
+\   'json': ['prettier'],
 \}
 
-let g:ale_javascript_prettier_options = '--single-quote'
+let g:ale_javascript_prettier_options = '--single-quote --trailing-comma all'
