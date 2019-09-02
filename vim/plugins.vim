@@ -86,4 +86,5 @@ let g:ale_fixers = {
 \   'json': ['prettier'],
 \}
 
-let g:ale_javascript_prettier_options = '--single-quote --trailing-comma all'
+"let g:ale_javascript_prettier_options = '--single-quote --trailing-comma all'
+let g:ale_javascript_prettier_options = '--single-quote'
