@@ -80,8 +80,8 @@ let b:ale_linters = ['pylint']
 
 " prettier
 let g:ale_fixers = {
-\   'javascript': ['prettier'],
-\   'typescript': ['prettier'],
+\   'javascript': ['prettier', 'eslint'],
+\   'typescript': ['prettier', 'eslint'],
 \   'scss': ['prettier'],
 \   'html': ['prettier'],
 \   'json': ['prettier'],
