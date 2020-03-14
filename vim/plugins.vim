@@ -80,11 +80,11 @@ let b:ale_linters = ['pylint']
 
 " prettier
 let g:ale_fixers = {
+\   'javascript': ['prettier'],
 \   'typescript': ['prettier'],
 \   'scss': ['prettier'],
 \   'html': ['prettier'],
 \   'json': ['prettier'],
 \}
 
-"let g:ale_javascript_prettier_options = '--single-quote --trailing-comma all'
 let g:ale_javascript_prettier_options = '--single-quote'
