@@ -41,3 +41,20 @@ snippet actions
   const FEATURE_NAME = '';
 
   export const = createAction(\`[${FEATURE_NAME}]\`);
+
+snippet reducer
+  import { createReducer, on } from '@ngrx/store';
+
+  import * as actions from '../actions';
+  import * as reducers from './';
+  import { InitialState, State } from './';
+
+  const createReducer(
+    InitialState,
+    on(actions. , reducers.)
+  );
+
+  export function Reducer(state: State, action) { 
+    return reducer(state, action);
+  }
+
