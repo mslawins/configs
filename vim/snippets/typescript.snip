@@ -1,12 +1,43 @@
 extends javascript
 
 snippet comp
-  import { Component } from '@angular/core';
+  import { ChangeDetectionStrategy, Component } from '@angular/core';
 
   @Component({
     selector: '',
-    templateUrl: '.component.html'
+    templateUrl: '.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
   })
   export class Component {
 
   }
+
+snippet effect
+  import { HttpErrorResponse } from '@angular/common/http';
+  import { Injectable } from '@angular/core';
+
+  import { Action } from '@ngrx/store';
+  import { Actions, createEffect, ofType } from '@ngrx/effects';
+  import { Observable, of } from 'rxjs';
+  import { catchError, switchMap } from 'rxjs/operators';
+
+  @Injectable()
+  export class Effects {
+    public $ = createEffect(() => this.());
+
+    constructor(private actions$: Actions) {}
+
+    private (): Observable<Action> {
+      return this.actions$.pipe(
+        ofType(),
+      );
+    }
+  }
+
+snippet actions
+  import { HttpErrorResponse } from '@angular/common/http';
+  import { createAction, props } from '@ngrx/store';
+
+  const FEATURE_NAME = '';
+
+  export const = createAction(\`[${FEATURE_NAME}]\`);
